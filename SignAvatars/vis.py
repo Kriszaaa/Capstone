@@ -21,12 +21,12 @@ torch.manual_seed(3407)
 
 print('initialization...')
 text_dict = {}
-with open('/SignAvatars/datasets/hamnosys2motion/data.json', 'rb') as f:
+with open('/Capstone/SignAvatars/datasets/hamnosys2motion/data.json', 'rb') as f:
     hamnosys_text_list = json.load(f)
 for i in hamnosys_text_list.keys():
     text_dict[i] = hamnosys_text_list[i]['hamnosys_text']
 
-csv_file_path = '/SignAvatars/datasets/language2motion/text/how2sign_realigned_train.csv'
+csv_file_path = '/Capstone/SignAvatars/datasets/language2motion/text/how2sign_realigned_train.csv'
 text_all = pd.read_csv(csv_file_path, 
         sep='\t', 
         names=["VIDEO_ID", "VIDEO_NAME", "SENTENCE_ID", "SENTENCE_NAME", "START_REALIGNED","END_REALIGNED","SENTENCE"])

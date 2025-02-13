@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import os.path as osp
-from config import cfg
+# from config import cfg
 from common.utils.smplx import smplx
 import pickle
 
